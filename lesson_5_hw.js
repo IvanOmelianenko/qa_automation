@@ -45,7 +45,7 @@ function formatText(text) {
   return editText.join('. ')
 
 
-}8
+}
 
 console.log(formatText("heLLo, this is My teXT.   have A NiCe DaY  ")); // "Hello, this is my text. Have a nice day"
 console.log(formatText(" Hello woRld   "));
