@@ -3,9 +3,8 @@ import { Employee } from "./employee.js";
 export class PM extends Employee {
   #jobtype = "PM";
 
-  constructor(id, salary, jobtype) {
+  constructor(id, salary) {
     super(id, salary);
-    this.#jobtype = jobtype;
   }
 
   getJobType() {
