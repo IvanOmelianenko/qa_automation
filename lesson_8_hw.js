@@ -23,6 +23,10 @@ console.log(Employee.compareSalary(dev, dev2)); // виведе salaries are equ
 
 const newDev = new Dev(1, 3000);
 // ваш код
+Object.defineProperty(newDev, "id", {
+  writable: false,
+  configurable: false,
+});
 
 newDev.id = 15; // видасть помилку TypeError: Cannot assign to read only property 'id' of object '#<Dev>'
 delete newDev.id; // видасть помилку TypeError: Cannot delete property 'id' of #<Dev>

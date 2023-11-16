@@ -9,6 +9,6 @@ export class PM extends Employee {
   }
 
   getJobType() {
-    return "I am a PM";
+    return `I am a ${this.#jobtype}`;
   }
 }

@@ -9,7 +9,7 @@ export class Dev extends Employee {
   }
 
   getJobType() {
-    return "I am a Dev";
+    return `I am a ${this.#jobtype}`;
   }
 
   static returnArrayOfDevs(...devs) {
